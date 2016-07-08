@@ -12,7 +12,9 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController{
+    IBOutlet UILabel *lbl;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +24,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)click:(id)sender{
+    NSString *output;
+    output = @"HELLO WORLD";
+    [lbl setText:output];
 }
 
 @end
